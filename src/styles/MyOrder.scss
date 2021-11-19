@@ -1,0 +1,41 @@
+.my_order {
+  width: 360px;
+  padding: 24px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+}
+
+.my_order-container {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.my_order-container img {
+  transform: rotate(180deg);
+  margin-right: 14px;
+}
+
+.my_order-title {
+  font-size: var(--lg);
+  font-weight: bold;
+}
+
+.primary_button {
+  height: 50px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+
+  color: var(--white);
+  font-size: var(--md);
+  font-weight: bold;
+
+  background-color: var(--hospital-green);
+}
+
+@media (max-width: 640px) {
+  .my_order {
+    width: 100%;
+  }
+}
