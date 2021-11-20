@@ -1,32 +1,14 @@
-.cards_container {
+.products_list {
     display: grid;
     grid-template-columns: repeat(auto-fill, 240px);
     gap: 26px;
     place-content: center;
+    margin: 3em 0 0 0;
 }
 
-.product_card {
-    width: 240px;
-}
-
-.product_card img {
-    width: 240px;
-    height: 240px;
-    border-radius: 20px;
-    object-fit: cover;
-}
 
 @media (max-width: 640px) {
-    .cards_container {
+    .products_list {
         grid-template-columns: repeat( auto-fill, 140px);
-    }
-
-    .product_card {
-        width: 140px;
-    }
-    
-    .product_card img {
-        width: 140px;
-        height: 140px;
     }
 }

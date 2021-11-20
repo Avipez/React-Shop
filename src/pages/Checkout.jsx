@@ -4,10 +4,10 @@ import "../styles/Checkout.scss"
 
 const Checkout = () => {
   return (
-    <div className="cheackout">
-      <div className="cheackout_container">
-        <h1 className="cheackout_title">My order</h1>
-        <div className="cheackout_content">
+    <div className="checkout">
+      <div className="checkout_container">
+        <h1 className="checkout_title">My order</h1>
+        <div className="checkout_content">
           <div className="order">
             <div>
               <p>

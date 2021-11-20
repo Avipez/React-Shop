@@ -1,4 +1,6 @@
-.OrederItem {
+@import "vars";
+
+.order-item {
     display: grid;
     grid-template-columns: auto 1fr auto auto;
     gap: 16px;
@@ -6,18 +8,18 @@
     align-items: center;
 }
 
-.OrederItem figure {
+.order-item figure {
     margin: 0;
 }
 
-.OrederItem figure img {
+.order-item figure img {
     width: 70px;
     height: 70px;
     border-radius: 20px;
     object-fit: cover;
 }
 
-.OrederItem p:nth-child(2) {
+.order-item p:nth-child(2) {
     color: var(--very-light-pink);
 }
 
