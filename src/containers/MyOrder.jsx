@@ -8,10 +8,11 @@ const MyOrder = () => {
   const { state } = useContext(AppContext);
 
   const sumTotal = () => {
-    const reducer = (accumalator, currentValue) => accumalator + currentValue.price;
-		const sum = state.cart.reduce(reducer, 0);
-		return sum;
-  }
+    const reducer = (accumalator, currentValue) =>
+      accumalator + currentValue.price;
+    const sum = state.cart.reduce(reducer, 0);
+    return sum;
+  };
 
   return (
     <aside className="my_order">
@@ -20,17 +21,20 @@ const MyOrder = () => {
         <h1 className="my_order-title">My order</h1>
       </div>
       <div className="my_order-content">
-        {state.cart.map(product => (
-          <OrderItem product={product} key={`orderItem-${product.id}`}/>
+        {state.cart.map((product) => (
+          <OrderItem product={product} key={`orderItem-${product.id}`} />
         ))}
+        <div className="order">
+          <p>
+            <span>Total</span>
+          </p>
+          <p>${sumTotal()}</p>
+        </div>
+        <button className="primary_button add_to_cart_button">
+          {" "}
+          Checkout{" "}
+        </button>
       </div>
-      <div className="order">
-					<p>
-						<span>Total</span>
-					</p>
-					<p>${sumTotal()}</p>
-				</div>
-      <button className="primary_button add_to_cart_button"> Checkout </button>
     </aside>
   );
 };
