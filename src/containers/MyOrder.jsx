@@ -5,7 +5,7 @@ import "../styles/MyOrder.scss";
 import flechita from "../assets/icons/flechita.svg";
 
 const MyOrder = () => {
-  const { state } = useContext(AppContext);
+  const { state } = useContext(AppContext)
 
   const sumTotal = () => {
     const reducer = (accumalator, currentValue) =>
@@ -21,7 +21,7 @@ const MyOrder = () => {
         <h1 className="my_order-title">My order</h1>
       </div>
       <div className="my_order-content">
-        {state.cart.map((product) => (
+        {state.cart.map( product => (
           <OrderItem product={product} key={`orderItem-${product.id}`} />
         ))}
         <div className="order">
