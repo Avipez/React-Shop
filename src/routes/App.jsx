@@ -22,16 +22,17 @@ const App = () => {
       <BrowserRouter /* basename={"/react-shop"} */>
         <Layout>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/password-recovery" element={<PasswordRecovery />}/>
-            <Route path="/send-email" element={<SendEmail />} />
-            <Route path="/new-password" element={<NewPassword />} />
-            <Route path="/account" element={<MyAccount />} />
-            <Route path="/signup" element={<CreateAccount />} />
-            <Route path="/checkout" element={<Checkout />} />
-            <Route path="/orders" element={<PastOrders />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="/" element={<Home />}>
+              <Route path="/login" element={<Login />} />
+              <Route path="/password-recovery" element={<PasswordRecovery />} />
+              <Route path="/send-email" element={<SendEmail />} />
+              <Route path="/new-password" element={<NewPassword />} />
+              <Route path="/account" element={<MyAccount />} />
+              <Route path="/signup" element={<CreateAccount />} />
+              <Route path="/checkout" element={<Checkout />} />
+              <Route path="/orders" element={<PastOrders />} />
+              <Route path="*" element={<NotFound />} />
+            </Route>
           </Routes>
         </Layout>
       </BrowserRouter>
